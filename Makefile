@@ -3,7 +3,7 @@ all:
 	pdflatex g5-documentation.tex
 
 clean:
-	rm *.aux \
+	rm -f *.aux \
 	*.log \
 	*.out \
 	*.toc \
