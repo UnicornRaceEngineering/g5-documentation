@@ -12,18 +12,24 @@ For at installere driversne til AVRIPS mk2 ordentligt skal man i enhedshåndteri
 Til brænding af software skal man i Windows være i ``tvunget'' admin rettigheder.
 \newline
 Dette gøres ved at man i cmd.exe skriver kommandoen:
+
 \begin{lstlisting}
-runas /noprofile /user:<brugernavn> cmd\newline
+	runas /noprofile /user:<brugernavn> cmd\newline
 \end{lstlisting}
+
 Dette åbner en nyt vindue som brændingen skal foregå i.\\
 når man er i den rigtige mappesti til den node man ønsker at brænde software til, som f.eks kunne se sådanne ud:\\
 \url{c:\\users\\<brugernavn>\\documents\\github\\Unicorn_race_engineering\\g5\\car_software\\node1} \\
 når du er i den mappe som du ønsker at brænde kode for har du kommandoer der kan bruges:
+
 \begin{lstlisting}
-make
+	make
 \end{lstlisting}
+
 Bruges til kun at compile koden så man hurtigt kan se om der er fejl i det nye kode.
+
 \begin{lstlisting}
-make install
+	make install
 \end{lstlisting}
+
 Brænder koden til chippen.

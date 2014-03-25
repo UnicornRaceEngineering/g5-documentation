@@ -1,5 +1,37 @@
 \section{Display 2.0}
-This explanes the display
+This explains the display
 
+%BILLED FRA SØREN!
 
-Written by Peter Reichwald   
+\section{graphical overview}
+\subsection*{RPM Measurement}
+At the top of the steering wheel there is located 20 LED's in assorted colors, in the order of Green, Red, Blue. These are designed to be individually phase line controlled in the order of lighting op from left to right.
+
+\subsection*{Shift-light}
+Large brigt blue LED positioned underneath the RPM lights, meant for indicating optimal gear shift upwards and downwards. This ligths need to take into account the current RPM of the engine, and the RPM of the wheels, and human reaction time.
+
+\subsection*{Seven segment multi display}
+seven seven-segment displays placed underneath shift light, divided into 3 groups.\newline
+Left group is the first 3 segment from the left, meant to show user selectable info from CAN. Segment color is red\newline
+Middle segment i the fourth from the left, and is meant to show the estimate of the current gear position. Segment color is green\newline
+Right group is the last 3 segments from the left, meant to show user selectable info from CAN. Segment color is red.\newline
+Left group and right group wil have same size segments, and middle group will have slightly larger segment for easier reading.
+
+\subsection*{RGB status indicator light}
+The lights will light up in three different modes:
+
+\begin{enumerate}
+	\item[•]Green = Good
+	\item[•]Red = Bad
+	\item[•]Blinking blue = Critically bad
+\end{enumerate}
+Description of the indication of the LED's:
+Light number one is left most, and number eight is right most
+\begin{enumerate}
+	\item[1] Battery Voltage
+	\item[2] Water Temperature
+	\item[3] Oil Temperature
+	\item[4] Oil Pressure
+	\item[5] air temperature
+\end{enumerate}
+Written by Henrik Jensen \& Peter Reichwald.
