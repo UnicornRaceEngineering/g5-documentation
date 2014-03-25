@@ -1,0 +1,41 @@
+\chapter{Sensor requirement}
+
+
+\begin{sidewaystable}[htbp]
+\centering
+%\footnotesize
+\begin{tabular} {l @{}c @{}c @{}c @{}c @{}c @{}c @{}c@{}}
+\toprule
+sensor & min	& max 	& resolution 	& refresh rate [Hz]	& placement 	& source of requirement & note	\\
+\midrule
+%\rowcolor[gray]{0.9}
+G sensor 	& -2.5G	& 2.5G	& 8 bit	 & 20Hz & CG* & Morten Jessen & XYZ\\
+GPS 	& C0	& C1	& C2	& C3	& C4	& C5	& C6 \\
+%\rowcolor[gray]{0.9}
+wheelsensor & 90	& 91	& 92	& 93	& 94	& 95	& 96 \\
+wheelsensor & 90	& 91	& 92	& 93	& 94	& 95	& 96 \\
+wheelsensor & 90	& 91	& 92	& 93	& 94	& 95	& 96 \\
+wheelsensor & 90	& 91	& 92	& 93	& 94	& 95	& 96 \\
+Steering wheel & 00	& D1	& D2	& 20		& D4				& D5			& D6 \\
+Throttle  		& 0	& max	& 8 bit	&  100	& Intake manifold 	& Morten Jessen	& 96  \\
+Oil pressure & off	& on	& 1bit 	& 5		& D4				& Morten Jessen			& D6 \\
+Fuel level sensor & off	& on	& 1bit 	& 1		&  xx liter			& Morten Jessen			& D6 \\
+Fuel pressure sensor & 0 bar	& xx	& 8 bit 	& 20		&  xx liter			& Morten Jessen			& D6 \\
+Water inlet temp & 20C	& 120C	& 8bit 	& 5		&  before cooler			& Morten Jessen			& D6 \\
+Water outlet temp & 20C	& 120C	& 8bit 	& 5		&  after cooler			& Morten Jessen			& D6 \\
+Battery voltage & 10V	& 15V	& 8bit 	& 5		&  xx			& Morten Jessen			& D6 \\
+Damper potentiometer & cm	& cm	& 8bit 	& 400 min		&  at damper			& Morten Jessen			& D6 \\
+Damper potentiometer & degrees	& degrees	& 8bit 	& 400 min		&  xx			& Morten Jessen			& D6 \\
+Brake pressure & bar	& bar	& 8bit 	& 50		&  xx			& Morten Jessen			& Front and rear \\
+Tyre temperature & degrees	& degrees	& 8bit 	& 5		&  xx			& Morten Jessen			& 3 points per tyre \\
+\bottomrule
+\end{tabular}
+\caption{Caption example.}
+\label{tab:label_example}
+\end{sidewaystable}
+
+
+* CG = Center of gravity 
+
+To do 
+want to know thottle 
