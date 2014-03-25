@@ -1,8 +1,11 @@
 \section{Display 2.0}
 This explains the display
-
-%BILLED FRA SØREN!
-
+\begin{figure}
+	\begin{center}
+		\includegraphics[scale=0.3]{G6SteeringWheelV3.pdf}
+		\caption{Concept drawing of steering wheel with display, not final edition}
+	\end{center}
+\end{figure}
 \section{graphical overview}
 \subsection*{RPM Measurement}
 At the top of the steering wheel there is located 20 LED's in assorted colors, in the order of Green, Red, Blue. These are designed to be individually phase line controlled in the order of lighting op from left to right.
@@ -27,11 +30,35 @@ The lights will light up in three different modes:
 \end{enumerate}
 Description of the indication of the LED's:
 Light number one is left most, and number eight is right most
-\begin{enumerate}
-	\item[1] Battery Voltage
-	\item[2] Water Temperature
-	\item[3] Oil Temperature
-	\item[4] Oil Pressure
-	\item[5] air temperature
-\end{enumerate}
-Written by Henrik Jensen \& Peter Reichwald.
+\begin{center}
+  \begin{tabular}{| c | c | c | c | c |}
+    \hline
+    LED & Indication & Good value & Bad value & Critical value \\ \hline
+    1 & Battery Voltage & <12 & >12 & >10 \\ \hline
+    2 & Water Temperature & >80 & >100 & <100  \\ \hline
+    3 & Oil Temperature & xx & xx & xx \\ \hline
+    4 & Oil Pressure & High & xx & Low / No readings \\ \hline
+    5 & Air Temperature & xx & xx & xx \\ \hline
+    6 & Air Pressure & xx & xx & xx \\ \hline
+    7 & Fuel & High & Low & xx \\ \hline
+    8 & Launch control & On & OFF & xx \\ \hline
+  \end{tabular}
+\end{center}
+
+\subsection*{Buttons}
+The buttons on the steering wheel consists of the following:
+\begin{center}
+  \begin{tabular}{| c | c | c | c |}
+    \hline
+    Function & Placement & Type & Reachable while driving  \\ \hline
+    Launch control & Upper left & momentary push(LED) & Yes\\ \hline
+    Tranction control (quick disable) & Upper right & Momentary push(LED) & Yes\\ \hline
+    Seven segment side select & Upper middle & 3 stage spring loaded & Yes\\ \hline
+    Seven segment info select & Upper middle & 12/16 stage rotary switch & Yes\\ \hline
+    Neatral gear enable & Lower middle & Momentary push & Yes(hardly)\\ \hline
+    Traction control (mode select) & Buttom back & 2 stage rocker & No\\ \hline
+    RPM (mode select [Full or 3-segmented]) & Buttom back & 2 stage rocker & No\\ \hline
+    
+  \end{tabular}
+\end{center}
+Written by Henrik Jensen \& Peter Reichwald. 
