@@ -3,7 +3,7 @@ Written by Henrik Jensen \& Peter Reichwald.
 This explains the display
 \begin{figure}
 	\begin{center}
-		\includegraphics[scale=0.3]{G6SteeringWheelV3.pdf}
+		\includegraphics[scale=0.3]{pictures/G6SteeringWheelV3.pdf}
 		\caption{Concept drawing of steering wheel with display, not final edition}
 	\end{center}
 \end{figure}
@@ -82,6 +82,35 @@ modes will be chosen before start and can therefore be read as a part of the int
     7 & xx & xx & xx & xx \\ \hline
     8 & xx & xx & xx & xx \\ \hline
   \end{tabular}
+\label{tab:modes}
 \end{center}
 
- 
+\subsection{gear shift light}
+To deside which gear the car should be in the engine RPM, current gear, gearratio and the powercurve of the engine is used.
+The shiftlight can be set in a mode where the acceleration of the engine and the reactiontime of a person will be taken into account.   
+
+The performance curve is shown at picture ??inset figure and ref to appendix?? this part will be analysed by hand becaurce we don't have the complete dataset but only a picture of it.
+The maximum engine RPM is xx ?? ref farstrup motorstyring ?? and the gearshifter will be calculated to give the bedst area under the power curve.
+The difference between the top and the bottom of the RPM to calculate is diffened by the difference in gear ratioes 
+    
+The gear ratios for the CVR600RR engine in shown in table %\vref(tab:gear_ratio) 
+the gear ratio is the number of revolutions the engine take, before the output of the gearcase have taken 1 revolution.
+thereby if the car go up in gear the engine RPM will drop aproximately: \\ \hline (current gearratio - next gear ratio)*current RPM  \\ \hline 
+
+\begin{center}
+\footnotesize
+  \begin{tabular}{| c | c | c | c | c | c |}
+    \hline
+    gear  & ratio  & gear drop & RPM range & 0 & max RPM \\ \hline
+    1     & RPM led & gear drop & RPM range & min RPM & max RPM            \\ \hline
+    2 & launchcontrol & gear drop & RPM range & min RPM & max RPM       \\ \hline
+    3 & tractioncontrol & gear drop & RPM range & min RPM & max RPM    \\ \hline
+    4 & reaction time & gear drop & RPM range & min RPM & max RPM      \\ \hline
+    5 & Daniel Høgh mode & gear drop & RPM range & min RPM & max RPM   \\ \hline
+    6 & xx & none & RPM range & min RPM & max RPM                 \\ \hline
+  \end{tabular}
+\label{tab:gear_ratio}
+\end{center}
+
+
+\subsubsection*{gearshift light with reactiontime} 
